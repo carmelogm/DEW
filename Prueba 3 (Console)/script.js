@@ -5,3 +5,5 @@ console.group()
 console.warn("Hola Mundo")
 
 console.error("Adios")
+
+console.table()
