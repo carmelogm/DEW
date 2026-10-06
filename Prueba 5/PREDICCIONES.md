@@ -22,7 +22,7 @@ Creo que van a salir en los logs var y let.
 
 ## Fragmento 5
 
-Creo que van a salir los numeros 0, 1, 2 y 3 tanto como para i como para j. 
+Creo que van a salir el numero 3 tanto como para i como para j. 
 **Mal** (Como el let esta dentro del for y el console.log fuera es como si el let no existiera.)
 
 ## Fragmento 6
