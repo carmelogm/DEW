@@ -1,8 +1,10 @@
+//Carmelo García Montesdeoca
+
 /* =====================================================================
    Prueba UD2 · Versión A · Ejercicio 3 · Escribe una función
    Coste de envío de un paquete
    ---------------------------------------------------------------------
-   Nombre y apellidos: ______________________________________________
+   Nombre y apellidos: Carmelo García Montesdeoca
 
    Escribe aquí la función costeEnvio(pesoKg, zona) y el programa que
    la usa, según el enunciado. Documenta la función con JSDoc.
@@ -12,9 +14,10 @@ if (typeof prompt === 'undefined') { require('./_node-prompt.js'); } // solo act
 
 // ----- FUNCIÓN -----------------------------------------------------------
 
-
+function costeEnvio(pesoKg, zona);
 
 // ----- PROGRAMA ----------------------------------------------------------
+
 
 
 

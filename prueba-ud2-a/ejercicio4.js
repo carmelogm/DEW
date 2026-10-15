@@ -1,3 +1,5 @@
+//Carmelo García Montesdeoca
+
 /* =====================================================================
    Prueba UD2 · Versión A · Ejercicio 4 · Amplía el código
    Mini consola con menú
@@ -78,11 +80,31 @@ function opcionSuma() {
 
 // ----- a) ESCRIBE AQUÍ sumarDigitos(numero) -------------------------------
 
+function sumarDigitos(numero){
+  const numeroSumar = pedirNumero('Introduce un numero (1-1000):',1, 1000)
 
+  let cont = 0
+  let i = 0
+
+  while(i <= numeroSumar){
+    i++
+    cont += i
+  }
+
+  let resultado = cont
+
+  console.log("La suma total de los dígitos es: " + resultado)
+}
 
 // ----- b) ESCRIBE AQUÍ opcionDigitos() ------------------------------------
 
-
+function opcionDigitos(){
+  const numeroEntero = pedirNumero('Introduce un numero entero:')
+  if (numeroEntero === null) {
+    console.log('Operación cancelada.');
+    return;
+  }
+}
 
 // =====================================================================
 // 3. MENÚ PRINCIPAL
@@ -91,6 +113,8 @@ function opcionSuma() {
 const MENU = `MINI CONSOLA · Prueba UD2
 1. Tabla de multiplicar
 2. Suma y media de 1 a N
+3. Sumar digitos
+4. Opcion Digitos
 0. Salir
 Elige una opción:`;
 
@@ -104,6 +128,10 @@ do {
     case 2:
       opcionSuma();
       break;
+    case 3:
+      sumarDigitos();
+    case 4:
+      opcionDigitos();
     case 0:
     case null:
       console.log('Hasta luego.');

@@ -1,3 +1,5 @@
+//Carmelo García Montesdeoca
+
 /* =====================================================================
    _node-prompt.js · Fichero de apoyo (NO forma parte de las soluciones)
    ---------------------------------------------------------------------

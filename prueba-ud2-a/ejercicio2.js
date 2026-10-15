@@ -2,7 +2,7 @@
    Prueba UD2 · Versión A · Ejercicio 2 · Completa el código
    Tiempo de descarga de un fichero
    ---------------------------------------------------------------------
-   Nombre y apellidos: ______________________________________________
+   Nombre y apellidos: Carmelo García Montesdeoca
 
    Sustituye cada hueco (comentarios ① a ⑧) por el código que falta.
    No cambies nada más. El programa debe ejecutar sin errores.
@@ -28,20 +28,20 @@ const MB_POR_GB = 1024;
 const SEGUNDOS_POR_MINUTO = 60;
 
 // ----- a) y b) ENTRADA ----------------------------------------------------
-const tamanoMb = /* ① */ ;                                   // número de MB
-const velocidadTexto = prompt('Velocidad (Mbps):') /* ② */ ; // '100' si cancela
-const velocidadMbps = /* ③ */ ;                              // texto -> número
+const tamanoMb = parseInt(prompt('Tamaño (Mbps): '));        // número de MB
+const velocidadTexto = prompt('Velocidad (Mbps): ') ?? 100;  // '100' si cancela
+const velocidadMbps = parseInt(velocidadTexto);              // texto -> número
 
 // ----- c) CLÁUSULA DE GUARDA ----------------------------------------------
-if ( /* ④ */ ) {
+if ( tamanoMb < 0 || velocidadMbps < 0 ) {
   console.error('Error: el tamaño y la velocidad deben ser números positivos.');
 } else {
   // ----- d) CÁLCULO --------------------------------------------------------
   const segundosTotales = Math.round((tamanoMb * BITS_POR_BYTE) / velocidadMbps);
-  const minutos = /* ⑤ */ ;   // minutos completos
-  const segundos = /* ⑥ */ ;  // segundos que sobran
-  const segundosTexto = /* ⑦ */ ; // siempre dos cifras: '05', '52'
-  const tamanoGb = /* ⑧ */ ;      // GB con dos decimales (texto)
+  const minutos = Math.trunc(segundosTotales / SEGUNDOS_POR_MINUTO) ;            // minutos completos
+  const segundos = Math.round(minutos % SEGUNDOS_POR_MINUTO) ;                   // segundos que sobran
+  const segundosTexto = String(segundos).padStart(2, '0') ;                      // siempre dos cifras: '05', '52'
+  const tamanoGb = tamanoMb / MB_POR_GB ;                                        // GB con dos decimales (texto)
 
   // ----- e) SALIDA ---------------------------------------------------------
   console.log(`Fichero de ${tamanoMb} MB (${tamanoGb} GB)`);
