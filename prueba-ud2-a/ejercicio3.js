@@ -14,7 +14,7 @@ if (typeof prompt === 'undefined') { require('./_node-prompt.js'); } // solo act
 
 // ----- FUNCIÓN -----------------------------------------------------------
 
-function costeEnvio(pesoKg, zona);
+
 
 // ----- PROGRAMA ----------------------------------------------------------
 
