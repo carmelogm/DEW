@@ -19,7 +19,9 @@ function mostrarCartas(cartas){
         for(let i = 0; i < numerocajas.length; i++){
             const divCarta = document.createElement("div");
             divCarta.classList.add("divCarta")
-            divCarta.textContent = cartas[i];
+            divCarta.textContent = numerocajas[i];
+
+            caja.appendChild(divCarta);
         }
     }
 }

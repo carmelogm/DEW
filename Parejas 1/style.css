@@ -1,5 +1,13 @@
+#caja{
+    display: grid;
+    gap: 10px;
+}
+
 .divCarta{
-    border: solid black;
+    border: solid 2px black;
     width: 100px;
     height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
