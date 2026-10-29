@@ -9,11 +9,14 @@ function mostrarCartas(cartas){
         const cartastotales = cartas * 2;
         const ncolumnas = Math.round(Math.sqrt(cartastotales));
 
+        caja.style.gridTemplateColumns = `repeat(${ncolumnas}, 100px)`;
+        caja.innerHTML = "";
+
         let numerocajas = [];
 
-        for(let i = 0; i < ncolumnas; i++){
-                numerocajas.push[i];
-                numerocajas.push[i];
+        for(let i = 0; i < cartas; i++){
+                numerocajas.push(i+1);
+                numerocajas.push(i+1);
         }
 
         for(let i = 0; i < numerocajas.length; i++){
