@@ -31,7 +31,16 @@ function mostrarCartas(cartas){
 
             caja.appendChild(divCarta);
         }
+
+        var secuencia = [];
+        for(let i = 0; i < cartas.length; i++){
+            secuencia.push(numerocajas)
+        }
     }
+
+    console.log("Número de parejas: " + cartas);
+    console.log("Número de cartas: " + cartas * 2);
+    console.log("Secuencia actual: " + secuencia);
 }
 
 mostrarCartas();
