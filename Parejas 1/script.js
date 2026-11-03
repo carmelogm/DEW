@@ -33,8 +33,8 @@ function mostrarCartas(cartas){
         }
 
         var secuencia = [];
-        for(let i = 0; i < cartas.length; i++){
-            secuencia.push(numerocajas)
+        for(let i = 0; i < numerocajas.length; i++){
+            secuencia.push(numerocajas[i])
         }
     }
 
@@ -48,4 +48,3 @@ function finDePartida(){
 }
 
 mostrarCartas();
-
