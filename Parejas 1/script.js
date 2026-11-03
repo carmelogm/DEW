@@ -19,6 +19,11 @@ function mostrarCartas(cartas){
                 numerocajas.push(i+1);
         }
 
+        for (let i = numerocajas.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [numerocajas[i], numerocajas[j]] = [numerocajas[j], numerocajas[i]];
+        }
+
         for(let i = 0; i < numerocajas.length; i++){
             const divCarta = document.createElement("div");
             divCarta.classList.add("divCarta")
