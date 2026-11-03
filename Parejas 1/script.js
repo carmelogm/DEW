@@ -43,4 +43,9 @@ function mostrarCartas(cartas){
     console.log("Secuencia actual: " + secuencia);
 }
 
+function finDePartida(){
+    return mostrarCartas();
+}
+
 mostrarCartas();
+
