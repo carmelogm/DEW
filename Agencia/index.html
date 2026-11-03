@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agencia de viajes</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="app.js" defer></script>
+<script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-evagd-telde.js"></script><link rel="stylesheet" type="text/css" href="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/cookies/cookies.css"/><script  type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/cookies/cookies.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/cookies/cookies-html.js"></script></head>
+<body>
+  <main class="pagina">
+    <header class="cabecera">
+      <h1 id="nombreAgencia">Horizonte Viajes</h1>
+      <label for="idioma" id="etiquetaIdioma">Idioma</label>
+      <select id="idioma">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+      </select>
+    </header>
+
+    <article class="paquete">
+      <p class="categoria" id="categoria">Viaje destacado</p>
+      <h2 id="titulo">Descubre Tenerife</h2>
+      <p id="descripcion">Disfruta de cinco días entre playas, volcanes y pueblos con encanto.</p>
+      <dl class="datos">
+        <div><dt id="etiquetaDestino">Destino</dt><dd id="destino">Tenerife, Islas Canarias</dd></div>
+        <div><dt id="etiquetaSalida">Fecha de salida</dt><dd id="fecha"></dd></div>
+        <div><dt id="etiquetaDuracion">Duración</dt><dd id="duracion">5 días</dd></div>
+        <div><dt id="etiquetaPrecio">Precio por persona</dt><dd id="precio"></dd></div>
+      </dl>
+      <p class="nota" id="nota">Incluye alojamiento y desayuno. Transporte no incluido.</p>
+    </article>
+  </main>
+</body>
+</html>
