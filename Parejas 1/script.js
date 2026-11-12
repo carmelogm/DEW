@@ -4,8 +4,6 @@ function mostrarCartas(cartas){
 
     let datosGuardados = localStorage.getItem("partidaActual");
     let numerocajas = [];
-
-    // ===================================================================================================
     
     if(datosGuardados){
 
@@ -36,8 +34,6 @@ function mostrarCartas(cartas){
         } 
     }
 
-    // ===================================================================================================
-
     const cartastotales = cartas * 2;
     const ncolumnas = Math.round(Math.sqrt(cartastotales));
 
@@ -52,6 +48,11 @@ function mostrarCartas(cartas){
             divCarta.textContent = "x";
         } else {
             divCarta.textContent = numerocajas[i].datos;
+        }
+        divCarta.onclick = function(){
+            numerocajas[i].ocultas = !numerocajas[i].ocultas;
+            localStorage.setItem("partidaActual", JSON.stringify(numerocajas));
+            mostrarCartas();
         }
         
         caja.appendChild(divCarta);
